@@ -1,0 +1,13 @@
+.env
+node_modules/
+output/
+tmp/
+deliverables/
+__pycache__/
+*.pyc
+.DS_Store
+data/newsletter-signups.jsonl
+data/stripe-products.generated.json
+.vercel
+luxury_bed_blueprint.pdf
+website/luxury_bed_blueprint.pdf

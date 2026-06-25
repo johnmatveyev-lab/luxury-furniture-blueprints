@@ -1,0 +1,105 @@
+{
+  "brand": {
+    "name": "Luxury Furniture Blueprints",
+    "supportEmail": "support@luxuryfurnitureblueprints.com",
+    "tagline": "Premium digital woodworking plans for furniture built to last."
+  },
+  "categories": [
+    {
+      "id": "bedroom",
+      "name": "Bedroom",
+      "description": "Platform beds, nightstands, dressers, and coordinated bedroom sets."
+    },
+    {
+      "id": "living-room",
+      "name": "Living Room",
+      "description": "Future console tables, media cabinets, coffee tables, and display pieces."
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "description": "Future case goods, drawer units, shelving, and closet systems."
+    }
+  ],
+  "brands": [
+    {
+      "id": "luxury-fluted-walnut",
+      "name": "Luxury Fluted Walnut"
+    },
+    {
+      "id": "coming-soon",
+      "name": "Coming Soon Collections"
+    }
+  ],
+  "products": [
+    {
+      "id": "luxury-fluted-walnut-bedroom",
+      "brand": "luxury-fluted-walnut",
+      "category": "bedroom",
+      "name": "Complete Luxury Fluted Walnut Bedroom Blueprint Bundle",
+      "status": "active",
+      "heroImage": "assets/hero-platform-bed.png",
+      "thumbnail": "assets/plan-set-box.png",
+      "summary": "One complete digital download for the platform bed, matching nightstand, and fluted dresser.",
+      "features": [
+        "Mobile client guide",
+        "Printable PDF files",
+        "Blueprint diagrams",
+        "Cut lists and calculators",
+        "Finishing and license pages"
+      ],
+      "packages": [
+        {
+          "key": "bundle",
+          "name": "Complete Bedroom Blueprint Bundle",
+          "priceCents": 5900,
+          "currency": "usd",
+          "stripePriceEnv": "STRIPE_PRICE_ID_BUNDLE",
+          "priceEnv": "BUNDLE_PRICE_CENTS",
+          "label": "Best Value",
+          "button": "Unlock Full Bundle",
+          "featured": true,
+          "description": "Complete digital blueprint library: platform bed, matching nightstand, fluted dresser, mobile guide access, printable PDF file, cut lists, tools, shopping checklist, finishing guide, cost calculators, license pages, and build support pages.",
+          "includes": [
+            "Platform bed, nightstand, and dresser",
+            "Complete PDF library and mobile guide access",
+            "Tools, checklists, calculators, finishing guide",
+            "Digital delivery after checkout"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modern-console-table",
+      "brand": "coming-soon",
+      "category": "living-room",
+      "name": "Modern Console Table Plans",
+      "status": "coming-soon",
+      "heroImage": "assets/plan-set-box.png",
+      "thumbnail": "assets/plan-set-box.png",
+      "summary": "A future living room plan set placeholder ready for catalog expansion.",
+      "features": [
+        "Category filter ready",
+        "Brand filter ready",
+        "Newsletter waitlist ready"
+      ],
+      "packages": []
+    },
+    {
+      "id": "fluted-storage-cabinet",
+      "brand": "coming-soon",
+      "category": "storage",
+      "name": "Fluted Storage Cabinet Plans",
+      "status": "coming-soon",
+      "heroImage": "assets/plan-set-box.png",
+      "thumbnail": "assets/plan-set-box.png",
+      "summary": "A future storage plan set placeholder ready for new PDF products.",
+      "features": [
+        "Reusable checkout workflow",
+        "Reusable delivery workflow",
+        "Reusable client guide structure"
+      ],
+      "packages": []
+    }
+  ]
+}

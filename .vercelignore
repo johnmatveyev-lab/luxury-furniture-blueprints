@@ -1,0 +1,6 @@
+node_modules
+output
+deliverables
+__pycache__
+*.pyc
+.DS_Store

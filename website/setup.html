@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Setup Required</title>
+    <meta name="description" content="Configure Stripe keys before accepting payments.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="landing-page utility-page">
+    <main class="utility-shell">
+      <section class="paywall-card">
+        <p class="gold-kicker">Setup Required</p>
+        <h1>Stripe Checkout Needs Your Keys</h1>
+        <p>
+          Add your Stripe secret key, webhook secret, product price, and email
+          settings to <code>.env</code>, then restart the Node server.
+        </p>
+        <div class="paywall-actions">
+          <a class="primary-cta" href="index.html#paywall">Back to Product Page</a>
+          <a class="secondary-cta" href="/test/checkout">Run Local Test Purchase</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury Furniture Blueprint Client Guide</title>
+    <meta
+      name="description"
+      content="Ordered client guide for the bed, nightstand, dresser, tools, checklists, and bundle blueprint pages."
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="guide-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Luxury Furniture Blueprint home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Luxury Furniture Blueprint Guide</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Blueprint sections">
+        <a href="#intro">Start</a>
+        <a href="#bed-build">Bed Build</a>
+        <a href="#nightstand-overview">Nightstand</a>
+        <a href="#nightstand-build">Nightstand Build</a>
+        <a href="#dresser-overview">Dresser</a>
+        <a href="#dresser-build">Dresser Build</a>
+        <a href="#tools-checklists">Tools &amp; Checklists</a>
+        <a href="#build-assistant">Build Assistant</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="guide-intro">
+        <div>
+          <p class="eyebrow">Client Build Guide</p>
+          <h1>Luxury Furniture Blueprint Library</h1>
+          <p>
+            Start with the brand cover and platform bed build. Continue through the
+            nightstand, then the dresser, then the tools, cut lists, calculators,
+            finishing notes, license pages, and thank-you pages.
+          </p>
+        </div>
+        <a class="download-button" href="/download/pdf">
+          Download PDF
+        </a>
+      </section>
+
+      <section id="intro" class="guide-section" data-section="intro">
+        <div class="section-copy">
+          <p class="section-number">01</p>
+          <h2>Start Here</h2>
+          <p>
+            Logo, welcome page, and table of contents. This is the polished opening
+            sequence customers see before the build instructions.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="bed-build" class="guide-section" data-section="bed-build">
+        <div class="section-copy">
+          <p class="section-number">02</p>
+          <h2>Platform Bed Build</h2>
+          <p>
+            Bed frame diagrams, exploded views, fluted panel plans, cut diagrams,
+            material sheets, assembly instructions, FAQ, and purchasing guide.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="nightstand-overview" class="guide-section" data-section="nightstand-overview">
+        <div class="section-copy">
+          <p class="section-number">03</p>
+          <h2>Nightstand Overview</h2>
+          <p>
+            Matching fluted walnut nightstand package pages and overview sheets.
+            This appears after the bed as the first upsell build.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="nightstand-build" class="guide-section" data-section="nightstand-build">
+        <div class="section-copy">
+          <p class="section-number">04</p>
+          <h2>Nightstand Build</h2>
+          <p>
+            Nightstand dimensions, exploded views, build steps, finish steps,
+            drawer/case construction, and detail pages.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="dresser-overview" class="guide-section" data-section="dresser-overview">
+        <div class="section-copy">
+          <p class="section-number">05</p>
+          <h2>Dresser Overview</h2>
+          <p>
+            Dresser package cover, welcome, contents, and product overview. This is
+            the second upsell build after the nightstand.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="dresser-build" class="guide-section" data-section="dresser-build">
+        <div class="section-copy">
+          <p class="section-number">06</p>
+          <h2>Dresser Build</h2>
+          <p>
+            Dresser tool list, cut checklist, cost calculator, exploded view, and
+            assembly case instructions.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="tools-checklists" class="guide-section" data-section="tools-checklists">
+        <div class="section-copy">
+          <p class="section-number">07</p>
+          <h2>Tools &amp; Checklists</h2>
+          <p>
+            Shopping list, tool guide, finishing guide, cut checklists, build
+            order checklist, cost calculators, license, FAQ, and thank-you pages.
+          </p>
+        </div>
+        <div class="image-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="build-assistant" class="guide-section assistant-section">
+        <div class="section-copy">
+          <p class="section-number">08</p>
+          <h2>Talk To The PDF</h2>
+          <p>
+            Ask a question while you build. When the optional assistant is configured
+            in production, it answers from the ordered guide context and points you
+            to the right section when a measurement needs visual confirmation.
+          </p>
+        </div>
+        <form class="assistant-card" id="pdf-chat-form">
+          <label for="pdf-question">Build question</label>
+          <textarea
+            id="pdf-question"
+            name="question"
+            rows="4"
+            placeholder="Example: Which section should I check before assembling the headboard?"
+          ></textarea>
+          <button class="download-button" type="submit">Ask Guide</button>
+          <p class="assistant-response" id="pdf-chat-response" aria-live="polite">
+            Ask a question to begin.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Luxury Furniture Blueprints. All rights reserved.</p>
+      <a href="mailto:support@luxuryfurnitureblueprints.com">support@luxuryfurnitureblueprints.com</a>
+    </footer>
+
+    <script src="image-manifest.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

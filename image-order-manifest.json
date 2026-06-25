@@ -1,0 +1,826 @@
+[
+  {
+    "source_index": 54,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_37 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 1,
+    "ordered_file": "001_brand_brand-and-cover_src054.png"
+  },
+  {
+    "source_index": 38,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_46 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 2,
+    "ordered_file": "002_brand_brand-and-cover_src038.png"
+  },
+  {
+    "source_index": 51,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_28 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 3,
+    "ordered_file": "003_brand_brand-and-cover_src051.png"
+  },
+  {
+    "source_index": 65,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_14 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 4,
+    "ordered_file": "004_brand_brand-and-cover_src065.png"
+  },
+  {
+    "source_index": 69,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_03 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 5,
+    "ordered_file": "005_brand_brand-and-cover_src069.png"
+  },
+  {
+    "source_index": 52,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_31 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 6,
+    "ordered_file": "006_brand_brand-and-cover_src052.png"
+  },
+  {
+    "source_index": 70,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_06 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 7,
+    "ordered_file": "007_brand_brand-and-cover_src070.png"
+  },
+  {
+    "source_index": 71,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_09 AM.png",
+    "group": "brand",
+    "group_title": "Brand & Cover",
+    "ordered_index": 8,
+    "ordered_file": "008_brand_brand-and-cover_src071.png"
+  },
+  {
+    "source_index": 10,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_12 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 9,
+    "ordered_file": "009_bed-overview_bed-blueprint-overview_src010.png"
+  },
+  {
+    "source_index": 11,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_17 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 10,
+    "ordered_file": "010_bed-overview_bed-blueprint-overview_src011.png"
+  },
+  {
+    "source_index": 12,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_21 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 11,
+    "ordered_file": "011_bed-overview_bed-blueprint-overview_src012.png"
+  },
+  {
+    "source_index": 13,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_24 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 12,
+    "ordered_file": "012_bed-overview_bed-blueprint-overview_src013.png"
+  },
+  {
+    "source_index": 14,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_31 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 13,
+    "ordered_file": "013_bed-overview_bed-blueprint-overview_src014.png"
+  },
+  {
+    "source_index": 15,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_35 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 14,
+    "ordered_file": "014_bed-overview_bed-blueprint-overview_src015.png"
+  },
+  {
+    "source_index": 17,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_43 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 15,
+    "ordered_file": "015_bed-overview_bed-blueprint-overview_src017.png"
+  },
+  {
+    "source_index": 39,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_50 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 16,
+    "ordered_file": "016_bed-overview_bed-blueprint-overview_src039.png"
+  },
+  {
+    "source_index": 40,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_54 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 17,
+    "ordered_file": "017_bed-overview_bed-blueprint-overview_src040.png"
+  },
+  {
+    "source_index": 41,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_57 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 18,
+    "ordered_file": "018_bed-overview_bed-blueprint-overview_src041.png"
+  },
+  {
+    "source_index": 42,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_59 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 19,
+    "ordered_file": "019_bed-overview_bed-blueprint-overview_src042.png"
+  },
+  {
+    "source_index": 43,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_03 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 20,
+    "ordered_file": "020_bed-overview_bed-blueprint-overview_src043.png"
+  },
+  {
+    "source_index": 44,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_06 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 21,
+    "ordered_file": "021_bed-overview_bed-blueprint-overview_src044.png"
+  },
+  {
+    "source_index": 47,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_15 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 22,
+    "ordered_file": "022_bed-overview_bed-blueprint-overview_src047.png"
+  },
+  {
+    "source_index": 48,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_19 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 23,
+    "ordered_file": "023_bed-overview_bed-blueprint-overview_src048.png"
+  },
+  {
+    "source_index": 50,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_25 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 24,
+    "ordered_file": "024_bed-overview_bed-blueprint-overview_src050.png"
+  },
+  {
+    "source_index": 53,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_34 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 25,
+    "ordered_file": "025_bed-overview_bed-blueprint-overview_src053.png"
+  },
+  {
+    "source_index": 55,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_41 AM.png",
+    "group": "bed-overview",
+    "group_title": "Bed Blueprint Overview",
+    "ordered_index": 26,
+    "ordered_file": "026_bed-overview_bed-blueprint-overview_src055.png"
+  },
+  {
+    "source_index": 59,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_56 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 27,
+    "ordered_file": "027_bed-build_bed-build-plans_src059.png"
+  },
+  {
+    "source_index": 8,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_32_32 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 28,
+    "ordered_file": "028_bed-build_bed-build-plans_src008.png"
+  },
+  {
+    "source_index": 9,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_32_52 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 29,
+    "ordered_file": "029_bed-build_bed-build-plans_src009.png"
+  },
+  {
+    "source_index": 25,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_20 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 30,
+    "ordered_file": "030_bed-build_bed-build-plans_src025.png"
+  },
+  {
+    "source_index": 26,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_23 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 31,
+    "ordered_file": "031_bed-build_bed-build-plans_src026.png"
+  },
+  {
+    "source_index": 27,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_27 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 32,
+    "ordered_file": "032_bed-build_bed-build-plans_src027.png"
+  },
+  {
+    "source_index": 28,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_30 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 33,
+    "ordered_file": "033_bed-build_bed-build-plans_src028.png"
+  },
+  {
+    "source_index": 29,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_33 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 34,
+    "ordered_file": "034_bed-build_bed-build-plans_src029.png"
+  },
+  {
+    "source_index": 30,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_37 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 35,
+    "ordered_file": "035_bed-build_bed-build-plans_src030.png"
+  },
+  {
+    "source_index": 31,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_44 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 36,
+    "ordered_file": "036_bed-build_bed-build-plans_src031.png"
+  },
+  {
+    "source_index": 32,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_18 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 37,
+    "ordered_file": "037_bed-build_bed-build-plans_src032.png"
+  },
+  {
+    "source_index": 33,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_26 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 38,
+    "ordered_file": "038_bed-build_bed-build-plans_src033.png"
+  },
+  {
+    "source_index": 72,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_12 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 39,
+    "ordered_file": "039_bed-build_bed-build-plans_src072.png"
+  },
+  {
+    "source_index": 73,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_15 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 40,
+    "ordered_file": "040_bed-build_bed-build-plans_src073.png"
+  },
+  {
+    "source_index": 74,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_18 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 41,
+    "ordered_file": "041_bed-build_bed-build-plans_src074.png"
+  },
+  {
+    "source_index": 75,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_21 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 42,
+    "ordered_file": "042_bed-build_bed-build-plans_src075.png"
+  },
+  {
+    "source_index": 76,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_24 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 43,
+    "ordered_file": "043_bed-build_bed-build-plans_src076.png"
+  },
+  {
+    "source_index": 77,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_28 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 44,
+    "ordered_file": "044_bed-build_bed-build-plans_src077.png"
+  },
+  {
+    "source_index": 78,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_31 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 45,
+    "ordered_file": "045_bed-build_bed-build-plans_src078.png"
+  },
+  {
+    "source_index": 79,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_34 AM.png",
+    "group": "bed-build",
+    "group_title": "Bed Build Plans",
+    "ordered_index": 46,
+    "ordered_file": "046_bed-build_bed-build-plans_src079.png"
+  },
+  {
+    "source_index": 81,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_42 AM.png",
+    "group": "nightstand-overview",
+    "group_title": "Nightstand Blueprint Overview",
+    "ordered_index": 47,
+    "ordered_file": "047_nightstand-overview_nightstand-blueprint-overview_src081.png"
+  },
+  {
+    "source_index": 34,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_30 AM.png",
+    "group": "nightstand-overview",
+    "group_title": "Nightstand Blueprint Overview",
+    "ordered_index": 48,
+    "ordered_file": "048_nightstand-overview_nightstand-blueprint-overview_src034.png"
+  },
+  {
+    "source_index": 35,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_33 AM.png",
+    "group": "nightstand-overview",
+    "group_title": "Nightstand Blueprint Overview",
+    "ordered_index": 49,
+    "ordered_file": "049_nightstand-overview_nightstand-blueprint-overview_src035.png"
+  },
+  {
+    "source_index": 80,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_38 AM.png",
+    "group": "nightstand-overview",
+    "group_title": "Nightstand Blueprint Overview",
+    "ordered_index": 50,
+    "ordered_file": "050_nightstand-overview_nightstand-blueprint-overview_src080.png"
+  },
+  {
+    "source_index": 82,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_45 AM.png",
+    "group": "nightstand-overview",
+    "group_title": "Nightstand Blueprint Overview",
+    "ordered_index": 51,
+    "ordered_file": "051_nightstand-overview_nightstand-blueprint-overview_src082.png"
+  },
+  {
+    "source_index": 1,
+    "source_file": "ChatGPT Image Jun 18, 2026, 05_02_08 AM (1).png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 52,
+    "ordered_file": "052_nightstand-build_nightstand-build-plans_src001.png"
+  },
+  {
+    "source_index": 2,
+    "source_file": "ChatGPT Image Jun 18, 2026, 05_02_08 AM (2).png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 53,
+    "ordered_file": "053_nightstand-build_nightstand-build-plans_src002.png"
+  },
+  {
+    "source_index": 3,
+    "source_file": "ChatGPT Image Jun 18, 2026, 05_04_55 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 54,
+    "ordered_file": "054_nightstand-build_nightstand-build-plans_src003.png"
+  },
+  {
+    "source_index": 4,
+    "source_file": "ChatGPT Image Jun 18, 2026, 05_09_04 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 55,
+    "ordered_file": "055_nightstand-build_nightstand-build-plans_src004.png"
+  },
+  {
+    "source_index": 5,
+    "source_file": "ChatGPT Image Jun 18, 2026, 07_22_49 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 56,
+    "ordered_file": "056_nightstand-build_nightstand-build-plans_src005.png"
+  },
+  {
+    "source_index": 6,
+    "source_file": "ChatGPT Image Jun 18, 2026, 07_50_44 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 57,
+    "ordered_file": "057_nightstand-build_nightstand-build-plans_src006.png"
+  },
+  {
+    "source_index": 83,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_56 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 58,
+    "ordered_file": "058_nightstand-build_nightstand-build-plans_src083.png"
+  },
+  {
+    "source_index": 84,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_38_59 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 59,
+    "ordered_file": "059_nightstand-build_nightstand-build-plans_src084.png"
+  },
+  {
+    "source_index": 85,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_03 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 60,
+    "ordered_file": "060_nightstand-build_nightstand-build-plans_src085.png"
+  },
+  {
+    "source_index": 86,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_06 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 61,
+    "ordered_file": "061_nightstand-build_nightstand-build-plans_src086.png"
+  },
+  {
+    "source_index": 87,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_09 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 62,
+    "ordered_file": "062_nightstand-build_nightstand-build-plans_src087.png"
+  },
+  {
+    "source_index": 88,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_12 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 63,
+    "ordered_file": "063_nightstand-build_nightstand-build-plans_src088.png"
+  },
+  {
+    "source_index": 89,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_15 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 64,
+    "ordered_file": "064_nightstand-build_nightstand-build-plans_src089.png"
+  },
+  {
+    "source_index": 90,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_18 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 65,
+    "ordered_file": "065_nightstand-build_nightstand-build-plans_src090.png"
+  },
+  {
+    "source_index": 91,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_21 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 66,
+    "ordered_file": "066_nightstand-build_nightstand-build-plans_src091.png"
+  },
+  {
+    "source_index": 92,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_27 AM.png",
+    "group": "nightstand-build",
+    "group_title": "Nightstand Build Plans",
+    "ordered_index": 67,
+    "ordered_file": "067_nightstand-build_nightstand-build-plans_src092.png"
+  },
+  {
+    "source_index": 7,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_05_00 AM.png",
+    "group": "dresser-overview",
+    "group_title": "Dresser Blueprint Overview",
+    "ordered_index": 68,
+    "ordered_file": "068_dresser-overview_dresser-blueprint-overview_src007.png"
+  },
+  {
+    "source_index": 93,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_30 AM.png",
+    "group": "dresser-overview",
+    "group_title": "Dresser Blueprint Overview",
+    "ordered_index": 69,
+    "ordered_file": "069_dresser-overview_dresser-blueprint-overview_src093.png"
+  },
+  {
+    "source_index": 94,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_33 AM.png",
+    "group": "dresser-overview",
+    "group_title": "Dresser Blueprint Overview",
+    "ordered_index": 70,
+    "ordered_file": "070_dresser-overview_dresser-blueprint-overview_src094.png"
+  },
+  {
+    "source_index": 95,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_37 AM.png",
+    "group": "dresser-overview",
+    "group_title": "Dresser Blueprint Overview",
+    "ordered_index": 71,
+    "ordered_file": "071_dresser-overview_dresser-blueprint-overview_src095.png"
+  },
+  {
+    "source_index": 96,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_39 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 72,
+    "ordered_file": "072_dresser-build_dresser-build-plans_src096.png"
+  },
+  {
+    "source_index": 97,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_43 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 73,
+    "ordered_file": "073_dresser-build_dresser-build-plans_src097.png"
+  },
+  {
+    "source_index": 100,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_40_18 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 74,
+    "ordered_file": "074_dresser-build_dresser-build-plans_src100.png"
+  },
+  {
+    "source_index": 102,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_44_04 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 75,
+    "ordered_file": "075_dresser-build_dresser-build-plans_src102.png"
+  },
+  {
+    "source_index": 103,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_58_10 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 76,
+    "ordered_file": "076_dresser-build_dresser-build-plans_src103.png"
+  },
+  {
+    "source_index": 98,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_39_48 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 77,
+    "ordered_file": "077_dresser-build_dresser-build-plans_src098.png"
+  },
+  {
+    "source_index": 99,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_40_08 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 78,
+    "ordered_file": "078_dresser-build_dresser-build-plans_src099.png"
+  },
+  {
+    "source_index": 101,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_40_58 AM.png",
+    "group": "dresser-build",
+    "group_title": "Dresser Build Plans",
+    "ordered_index": 79,
+    "ordered_file": "079_dresser-build_dresser-build-plans_src101.png"
+  },
+  {
+    "source_index": 18,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_51 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 80,
+    "ordered_file": "080_tools-checklists_tools-checklists-and-calculators_src018.png"
+  },
+  {
+    "source_index": 56,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_45 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 81,
+    "ordered_file": "081_tools-checklists_tools-checklists-and-calculators_src056.png"
+  },
+  {
+    "source_index": 57,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_48 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 82,
+    "ordered_file": "082_tools-checklists_tools-checklists-and-calculators_src057.png"
+  },
+  {
+    "source_index": 58,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_52 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 83,
+    "ordered_file": "083_tools-checklists_tools-checklists-and-calculators_src058.png"
+  },
+  {
+    "source_index": 60,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_59 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 84,
+    "ordered_file": "084_tools-checklists_tools-checklists-and-calculators_src060.png"
+  },
+  {
+    "source_index": 61,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_02 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 85,
+    "ordered_file": "085_tools-checklists_tools-checklists-and-calculators_src061.png"
+  },
+  {
+    "source_index": 62,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_05 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 86,
+    "ordered_file": "086_tools-checklists_tools-checklists-and-calculators_src062.png"
+  },
+  {
+    "source_index": 63,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_08 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 87,
+    "ordered_file": "087_tools-checklists_tools-checklists-and-calculators_src063.png"
+  },
+  {
+    "source_index": 64,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_12 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 88,
+    "ordered_file": "088_tools-checklists_tools-checklists-and-calculators_src064.png"
+  },
+  {
+    "source_index": 66,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_17 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 89,
+    "ordered_file": "089_tools-checklists_tools-checklists-and-calculators_src066.png"
+  },
+  {
+    "source_index": 67,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_55 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 90,
+    "ordered_file": "090_tools-checklists_tools-checklists-and-calculators_src067.png"
+  },
+  {
+    "source_index": 68,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_37_59 AM.png",
+    "group": "tools-checklists",
+    "group_title": "Tools, Checklists & Calculators",
+    "ordered_index": 91,
+    "ordered_file": "091_tools-checklists_tools-checklists-and-calculators_src068.png"
+  },
+  {
+    "source_index": 16,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_39 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 92,
+    "ordered_file": "092_upsells_bundle-and-upsell-pages_src016.png"
+  },
+  {
+    "source_index": 19,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_55 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 93,
+    "ordered_file": "093_upsells_bundle-and-upsell-pages_src019.png"
+  },
+  {
+    "source_index": 20,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_33_58 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 94,
+    "ordered_file": "094_upsells_bundle-and-upsell-pages_src020.png"
+  },
+  {
+    "source_index": 21,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_03 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 95,
+    "ordered_file": "095_upsells_bundle-and-upsell-pages_src021.png"
+  },
+  {
+    "source_index": 22,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_08 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 96,
+    "ordered_file": "096_upsells_bundle-and-upsell-pages_src022.png"
+  },
+  {
+    "source_index": 23,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_11 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 97,
+    "ordered_file": "097_upsells_bundle-and-upsell-pages_src023.png"
+  },
+  {
+    "source_index": 24,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_34_14 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 98,
+    "ordered_file": "098_upsells_bundle-and-upsell-pages_src024.png"
+  },
+  {
+    "source_index": 36,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_38 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 99,
+    "ordered_file": "099_upsells_bundle-and-upsell-pages_src036.png"
+  },
+  {
+    "source_index": 37,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_35_42 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 100,
+    "ordered_file": "100_upsells_bundle-and-upsell-pages_src037.png"
+  },
+  {
+    "source_index": 45,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_09 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 101,
+    "ordered_file": "101_upsells_bundle-and-upsell-pages_src045.png"
+  },
+  {
+    "source_index": 46,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_12 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 102,
+    "ordered_file": "102_upsells_bundle-and-upsell-pages_src046.png"
+  },
+  {
+    "source_index": 49,
+    "source_file": "ChatGPT Image Jun 18, 2026, 08_36_22 AM.png",
+    "group": "upsells",
+    "group_title": "Bundle & Upsell Pages",
+    "ordered_index": 103,
+    "ordered_file": "103_upsells_bundle-and-upsell-pages_src049.png"
+  }
+]

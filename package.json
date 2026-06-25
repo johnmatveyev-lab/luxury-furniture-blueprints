@@ -1,0 +1,22 @@
+{
+  "name": "luxury-bed-blueprint-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "stripe:seed": "node scripts/seed-stripe.mjs",
+    "stripe:webhook": "node scripts/setup-stripe-webhook.mjs",
+    "production:check": "node scripts/production-check.mjs",
+    "smoke": "node scripts/smoke-test.mjs",
+    "test": "npm run smoke",
+    "test:pdf": "python3 -m unittest test_build_pdf.py"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^9.0.1",
+    "stripe": "^17.5.0"
+  }
+}
