@@ -11,7 +11,9 @@ Run:
 from __future__ import annotations
 
 import json
+import os
 import shutil
+import subprocess
 import sys
 from hashlib import sha256
 from io import BytesIO
@@ -224,7 +226,69 @@ def draw_image_page(pdf: canvas.Canvas, image_path: Path, page_size: tuple[float
     pdf.setFillColorRGB(1, 1, 1)
     pdf.rect(0, 0, page_width, page_height, stroke=0, fill=1)
     pdf.drawImage(reader, x, y, width=draw_width, height=draw_height)
+    draw_invisible_search_text(pdf, searchable_text_for_image(image_path), page_size)
     pdf.showPage()
+
+
+def page_label(path: Path) -> str:
+    """Return a human-readable page label from an ordered image filename."""
+    return path.stem.replace("_", " ").replace("-", " ").title()
+
+
+def searchable_text_for_image(path: Path) -> str:
+    """Return stable page label plus optional OCR text for image-only blueprint pages."""
+    parts = [page_label(path)]
+    ocr_text = ocr_image_text(path)
+    if ocr_text:
+        parts.append(ocr_text)
+    return "\n".join(parts)
+
+
+def ocr_image_text(path: Path) -> str:
+    """Extract OCR text with Tesseract when available; return empty text otherwise."""
+    if os.environ.get("BLUEPRINT_OCR_TEXT_LAYER", "true").lower() == "false":
+        return ""
+    if not shutil.which("tesseract"):
+        return ""
+
+    try:
+        result = subprocess.run(
+            ["tesseract", str(path), "stdout", "--psm", "6"],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=45,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return ""
+
+    if result.returncode != 0:
+        return ""
+    return " ".join(result.stdout.split())
+
+
+def draw_invisible_search_text(pdf: canvas.Canvas, text: str, page_size: tuple[float, float]) -> None:
+    """Add a searchable but invisible text layer to the current PDF page."""
+    if not text.strip():
+        return
+
+    page_width, _page_height = page_size
+    text_object = pdf.beginText(8, 8)
+    text_object.setFont("Helvetica", 1)
+    if hasattr(text_object, "setTextRenderMode"):
+        text_object.setTextRenderMode(3)
+
+    max_line_length = max(80, int(page_width // 3))
+    remaining = text.strip()[:5000]
+    while remaining:
+        line = remaining[:max_line_length]
+        split_at = line.rfind(" ")
+        if split_at > 20 and len(remaining) > max_line_length:
+            line = remaining[:split_at]
+        text_object.textLine(line)
+        remaining = remaining[len(line):].lstrip()
+
+    pdf.drawText(text_object)
 
 
 def draw_bundle_toc_page(pdf: canvas.Canvas, page_size: tuple[float, float]) -> None:

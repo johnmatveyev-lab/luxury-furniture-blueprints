@@ -103,6 +103,23 @@ class BuildPdfTests(unittest.TestCase):
                 "Complete Luxury Fluted Walnut Bedroom Blueprint Bundle",
             )
 
+    def test_image_pages_include_searchable_page_labels(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            image_dir = root / "blueprint_images"
+            image_dir.mkdir()
+
+            Image.new("RGB", (120, 80), "white").save(
+                image_dir / "040_bed-build_step_01.png"
+            )
+            output_pdf = root / "bundle.pdf"
+
+            build_pdf.build_pdf(image_dir, output_pdf)
+
+            reader = PdfReader(str(output_pdf))
+            extracted = "\n".join(page.extract_text() or "" for page in reader.pages)
+            self.assertIn("040 Bed Build Step 01", extracted)
+
 
 if __name__ == "__main__":
     unittest.main()
