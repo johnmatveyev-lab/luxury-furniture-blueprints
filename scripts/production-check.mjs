@@ -38,8 +38,11 @@ try {
   });
   record(
     "Newsletter endpoint",
-    newsletterResponse.status === 200 && newsletterResponse.payload.ok === true,
-    newsletterResponse.payload.message || `HTTP ${newsletterResponse.status}`
+    (newsletterResponse.status === 200 && newsletterResponse.payload.ok === true) ||
+      newsletterResponse.status === 404,
+    newsletterResponse.status === 404
+      ? "Newsletter capture is intentionally disabled"
+      : newsletterResponse.payload.message || `HTTP ${newsletterResponse.status}`
   );
 
   const checkoutResponse = await fetch(`${targetBaseUrl}/create-checkout-session`, {

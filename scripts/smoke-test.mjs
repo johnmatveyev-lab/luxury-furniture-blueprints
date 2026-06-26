@@ -65,6 +65,7 @@ try {
   await expectPostStatusWithCookie("/api/pdf-chat", { question: "Where do I start?" }, 503, cookie);
 
   await verifyProductionGuardrails();
+  await verifyConfiguredProductionReadiness();
   console.log("Smoke test passed.");
 } finally {
   stopServer(server);
@@ -97,7 +98,12 @@ function stopServer(child) {
 async function waitForServer(child, expectedPort) {
   const start = Date.now();
   while (Date.now() - start < 8000) {
-    if (child.output.includes(`:${expectedPort}/website/index.html`)) return;
+    if (
+      child.output.includes(`:${expectedPort}/website/index.html`) ||
+      child.output.includes("blueprint site running at")
+    ) {
+      return;
+    }
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
   throw new Error(`Server did not start. Output:\n${child.output}`);
@@ -208,7 +214,36 @@ async function verifyProductionGuardrails() {
       name: "Production Reader",
       interest: "bedroom",
       source: "production-smoke-test",
-    }, 200);
+    }, 404);
+  } finally {
+    stopServer(productionServer);
+  }
+}
+
+async function verifyConfiguredProductionReadiness() {
+  const productionPort = 8125;
+  const productionBase = `http://127.0.0.1:${productionPort}`;
+  const productionServer = startServer({
+    PORT: String(productionPort),
+    PUBLIC_BASE_URL: "https://luxury-furniture-blueprints.example",
+    NODE_ENV: "production",
+    ENABLE_TEST_CHECKOUT: "false",
+    STRIPE_SECRET_KEY: "sk_live_configured_for_readiness_test",
+    STRIPE_WEBHOOK_SECRET: "whsec_configured_for_readiness_test",
+    DELIVERY_ACCESS_SECRET: "configured-readiness-secret",
+    EMAIL_DELIVERY_MODE: "console",
+    NEWSLETTER_WEBHOOK_URL: "",
+  });
+
+  try {
+    await waitForServer(productionServer, productionPort);
+    await expectStatusOnBase(productionBase, "/readiness", 200);
+    await expectPostStatusOnBase(productionBase, "/api/newsletter", {
+      email: "production-reader@example.com",
+      name: "Production Reader",
+      interest: "bedroom",
+      source: "configured-production-smoke-test",
+    }, 404);
   } finally {
     stopServer(productionServer);
   }

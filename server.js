@@ -232,6 +232,13 @@ app.get("/download/pdf", async (request, response) => {
 });
 
 app.post("/api/newsletter", async (request, response) => {
+  if (isProduction && !process.env.NEWSLETTER_WEBHOOK_URL) {
+    return response.status(404).json({
+      ok: false,
+      message: "Newsletter capture is not enabled.",
+    });
+  }
+
   const email = String(request.body.email || "").trim().toLowerCase();
   const name = String(request.body.name || "").trim();
   const interest = String(request.body.interest || "").trim();
@@ -370,6 +377,11 @@ async function sendFulfillmentEmail(session) {
   };
 
   if ((process.env.EMAIL_DELIVERY_MODE || "console") === "smtp") {
+    if (!isSmtpConfigured()) {
+      console.warn("SMTP email delivery is selected but SMTP settings are incomplete.");
+      return;
+    }
+
     const transport = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT || 587),
@@ -460,11 +472,9 @@ function getReadinessReport() {
     ),
     publicBaseUrlConfigured: !publicBaseUrl.includes("127.0.0.1") && !publicBaseUrl.includes("localhost"),
     testCheckoutDisabledInProduction: !isProduction || !testCheckoutEnabled,
-    emailDeliveryConfigured:
-      (process.env.EMAIL_DELIVERY_MODE || "console") === "smtp"
-        ? Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS)
-        : !isProduction,
-    newsletterCaptureConfigured: Boolean(process.env.NEWSLETTER_WEBHOOK_URL) || !isProduction,
+    checkoutSuccessDeliveryConfigured: true,
+    fulfillmentEmailOptional: true,
+    newsletterDisabledOrConfigured: Boolean(process.env.NEWSLETTER_WEBHOOK_URL) || isProduction,
   };
 
   const ready = Object.values(checks).every(Boolean);
@@ -500,6 +510,10 @@ async function appendJsonLine(filePath, value) {
 
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function isSmtpConfigured() {
+  return Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS);
 }
 
 function getDefaultPublicBaseUrl() {

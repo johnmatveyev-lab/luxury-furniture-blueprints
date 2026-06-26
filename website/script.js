@@ -127,28 +127,6 @@ filterButtons.forEach((button) => {
   });
 });
 
-const newsletterForm = document.querySelector("#newsletter-form");
-if (newsletterForm) {
-  newsletterForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const status = document.querySelector("#newsletter-status");
-    status.textContent = "Joining...";
-
-    try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(newsletterForm))),
-      });
-      const data = await response.json();
-      status.textContent = data.message || "Thanks. You're on the list.";
-      if (response.ok) newsletterForm.reset();
-    } catch {
-      status.textContent = "Signup failed. Please try again.";
-    }
-  });
-}
-
 const pdfChatForm = document.querySelector("#pdf-chat-form");
 if (pdfChatForm) {
   pdfChatForm.addEventListener("submit", async (event) => {
@@ -239,7 +217,7 @@ function renderCatalog(filterType, filterValue) {
         ${
           product.status === "active" && packageCount > 0
             ? '<a class="secondary-cta" href="#paywall">View Packages</a>'
-            : '<a class="secondary-cta" href="#newsletter-form">Get Notified</a>'
+            : '<span class="secondary-cta is-disabled">Coming Soon</span>'
         }
       </div>
     `;

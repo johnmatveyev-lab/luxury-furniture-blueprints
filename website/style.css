@@ -739,6 +739,11 @@ h2 {
   color: #fff;
 }
 
+.secondary-cta.is-disabled {
+  cursor: default;
+  opacity: 0.62;
+}
+
 .paywall-note {
   font-size: 0.9rem;
 }
@@ -804,15 +809,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-.newsletter-section {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(24px, 5vw, 66px);
-  align-items: start;
-  border-top: 1px solid rgba(214, 163, 91, 0.24);
-}
-
-.newsletter-form,
 .assistant-card {
   display: grid;
   gap: 12px;
@@ -822,8 +818,6 @@ h2 {
   background: rgba(255, 255, 255, 0.05);
 }
 
-.newsletter-form input,
-.newsletter-form select,
 .assistant-card textarea {
   min-height: 50px;
   width: 100%;
@@ -833,10 +827,6 @@ h2 {
   color: #fff;
   font: inherit;
   padding: 0 14px;
-}
-
-.newsletter-form select option {
-  color: var(--ink);
 }
 
 .assistant-card label {
