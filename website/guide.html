@@ -37,7 +37,7 @@
         <a href="#dresser-overview">Dresser</a>
         <a href="#dresser-build">Dresser Build</a>
         <a href="#tools-checklists">Tools &amp; Checklists</a>
-        <a href="#build-assistant">Build Assistant</a>
+        <a href="#" id="open-chat-nav">Ask the Guide</a>
       </nav>
     </header>
 
@@ -141,30 +141,39 @@
         <div class="image-grid" aria-live="polite"></div>
       </section>
 
-      <section id="build-assistant" class="guide-section assistant-section">
-        <div class="section-copy">
-          <p class="section-number">08</p>
-          <h2>Talk To The PDF</h2>
-          <p>
-            Ask a question while you build. When the optional assistant is configured
-            in production, it answers from the ordered guide context and points you
-            to the right section when a measurement needs visual confirmation.
-          </p>
+      <!-- Floating Build Assistant chat widget -->
+      <button id="chat-launcher" class="chat-launcher" aria-label="Open build assistant" type="button">
+        <span class="chat-launcher-icon">✨</span>
+        <span class="chat-launcher-text">Ask the Guide</span>
+      </button>
+
+      <div id="chat-panel" class="chat-panel" role="dialog" aria-label="Build assistant" aria-hidden="true">
+        <div class="chat-header">
+          <div class="chat-header-title">
+            <span class="chat-dot"></span>
+            <div>
+              <strong>Build Assistant</strong>
+              <small>Answers from your blueprint guide</small>
+            </div>
+          </div>
+          <button id="chat-close" class="chat-close" aria-label="Close" type="button">×</button>
         </div>
-        <form class="assistant-card" id="pdf-chat-form">
-          <label for="pdf-question">Build question</label>
-          <textarea
+        <div id="chat-messages" class="chat-messages" aria-live="polite">
+          <div class="chat-msg chat-msg-bot">
+            Hi! Ask me anything about building the bed, nightstand, or dresser — cut sizes, assembly order, finishing steps, and more.
+          </div>
+        </div>
+        <form id="pdf-chat-form" class="chat-input-row">
+          <input
             id="pdf-question"
             name="question"
-            rows="4"
-            placeholder="Example: Which section should I check before assembling the headboard?"
-          ></textarea>
-          <button class="download-button" type="submit">Ask Guide</button>
-          <p class="assistant-response" id="pdf-chat-response" aria-live="polite">
-            Ask a question to begin.
-          </p>
+            type="text"
+            autocomplete="off"
+            placeholder="e.g. What size are the bed legs?"
+          />
+          <button type="submit" class="chat-send" aria-label="Send">Send</button>
         </form>
-      </section>
+      </div>
     </main>
 
     <footer class="site-footer">

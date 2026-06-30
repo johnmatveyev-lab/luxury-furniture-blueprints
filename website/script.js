@@ -127,24 +127,69 @@ filterButtons.forEach((button) => {
   });
 });
 
+// ---- Floating Build Assistant chat widget ----
+const chatLauncher = document.querySelector("#chat-launcher");
+const chatPanel = document.querySelector("#chat-panel");
+const chatClose = document.querySelector("#chat-close");
+const chatMessages = document.querySelector("#chat-messages");
 const pdfChatForm = document.querySelector("#pdf-chat-form");
+const pdfQuestion = document.querySelector("#pdf-question");
+const openChatNav = document.querySelector("#open-chat-nav");
+
+function openChat() {
+  if (!chatPanel) return;
+  chatPanel.classList.add("is-open");
+  chatPanel.setAttribute("aria-hidden", "false");
+  if (chatLauncher) chatLauncher.classList.add("is-hidden");
+  if (pdfQuestion) setTimeout(() => pdfQuestion.focus(), 50);
+}
+
+function closeChat() {
+  if (!chatPanel) return;
+  chatPanel.classList.remove("is-open");
+  chatPanel.setAttribute("aria-hidden", "true");
+  if (chatLauncher) chatLauncher.classList.remove("is-hidden");
+}
+
+function appendMessage(text, who) {
+  if (!chatMessages) return null;
+  const bubble = document.createElement("div");
+  bubble.className = "chat-msg chat-msg-" + who;
+  bubble.textContent = text;
+  chatMessages.append(bubble);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  return bubble;
+}
+
+if (chatLauncher) chatLauncher.addEventListener("click", openChat);
+if (chatClose) chatClose.addEventListener("click", closeChat);
+if (openChatNav) openChatNav.addEventListener("click", (e) => { e.preventDefault(); openChat(); });
+
 if (pdfChatForm) {
   pdfChatForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const responseBox = document.querySelector("#pdf-chat-response");
-    responseBox.textContent = "Checking the guide...";
+    const question = (pdfQuestion?.value || "").trim();
+    if (!question) return;
+
+    appendMessage(question, "user");
+    pdfQuestion.value = "";
+    const typing = appendMessage("Checking the guide…", "bot");
+    typing.classList.add("chat-msg-typing");
 
     try {
       const response = await fetch("/api/pdf-chat", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(pdfChatForm))),
+        body: JSON.stringify({ question }),
       });
       const data = await response.json();
-      responseBox.textContent = data.answer || "No answer was returned.";
+      typing.classList.remove("chat-msg-typing");
+      typing.textContent = data.answer || "No answer was returned.";
     } catch {
-      responseBox.textContent = "The assistant is unavailable right now.";
+      typing.classList.remove("chat-msg-typing");
+      typing.textContent = "The assistant is unavailable right now. Please try again.";
     }
+    chatMessages.scrollTop = chatMessages.scrollHeight;
   });
 }
 
@@ -176,7 +221,7 @@ document.querySelectorAll(".guide-section").forEach((section) => {
     const empty = document.createElement("p");
     empty.className = "empty-state";
     empty.textContent =
-      "Images for this section will appear here after running python3 build_pdf.py.";
+      "\uD83D\uDD12 This section unlocks after purchase — the full blueprint pages, diagrams, and cut lists load here once you have access.";
     grid.append(empty);
     return;
   }
