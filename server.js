@@ -343,6 +343,24 @@ async function getPaidCheckoutSession(sessionId) {
   }
 }
 
+const INDIVIDUAL_PLAN_PRODUCTS = {
+  "plink_1ToofVEg9evyAoHbR3xMquCA": {
+    name: "Fluted Walnut Platform Bed Plans",
+    pdfFile: "bed-plans.pdf",
+    pageUrl: "bed-plans-thankyou.html",
+  },
+  "plink_1ToofWEg9evyAoHbEyRorSVi": {
+    name: "Fluted Walnut Nightstand Plans",
+    pdfFile: "nightstand-plans.pdf",
+    pageUrl: "nightstand-plans-thankyou.html",
+  },
+  "plink_1ToofXEg9evyAoHb961TL894": {
+    name: "Fluted Walnut Dresser Plans",
+    pdfFile: "dresser-plans.pdf",
+    pageUrl: "dresser-plans-thankyou.html",
+  },
+};
+
 async function sendFulfillmentEmail(session) {
   const email = session.customer_details?.email || session.customer_email;
   if (!email) {
@@ -350,24 +368,51 @@ async function sendFulfillmentEmail(session) {
     return;
   }
 
-  const downloadUrl = `${publicBaseUrl}/download/pdf?session_id=${encodeURIComponent(session.id)}`;
+  const individualPlan = session.payment_link
+    ? INDIVIDUAL_PLAN_PRODUCTS[session.payment_link]
+    : null;
+
+  const downloadUrl = individualPlan
+    ? `${publicBaseUrl}/website/pdfs/${individualPlan.pdfFile}`
+    : `${publicBaseUrl}/download/pdf?session_id=${encodeURIComponent(session.id)}`;
   const guideUrl = `${publicBaseUrl}/access/guide?session_id=${encodeURIComponent(session.id)}`;
-  const successUrl = `${publicBaseUrl}/website/success.html?session_id=${encodeURIComponent(session.id)}`;
+  const successUrl = individualPlan
+    ? `${publicBaseUrl}/website/${individualPlan.pageUrl}`
+    : `${publicBaseUrl}/website/success.html?session_id=${encodeURIComponent(session.id)}`;
+  const subject = individualPlan
+    ? `Your ${individualPlan.name}`
+    : "Your Luxury Fluted Walnut Bedroom Blueprint Bundle";
 
   const message = {
     from: process.env.FROM_EMAIL || "Luxury Furniture Blueprints <support@luxuryfurnitureblueprints.com>",
     to: email,
-    subject: "Your Luxury Fluted Walnut Bedroom Blueprint Bundle",
-    text: [
-      "Thank you for your purchase.",
-      "",
-      `Download your PDF: ${downloadUrl}`,
-      `Open the client guide: ${guideUrl}`,
-      `Receipt and access page: ${successUrl}`,
-      "",
-      "Keep this email for future access.",
-    ].join("\n"),
-    html: `
+    subject,
+    text: individualPlan
+      ? [
+          "Thank you for your purchase.",
+          "",
+          `Download your PDF: ${downloadUrl}`,
+          `Receipt and access page: ${successUrl}`,
+          "",
+          "Keep this email for future access.",
+        ].join("\n")
+      : [
+          "Thank you for your purchase.",
+          "",
+          `Download your PDF: ${downloadUrl}`,
+          `Open the client guide: ${guideUrl}`,
+          `Receipt and access page: ${successUrl}`,
+          "",
+          "Keep this email for future access.",
+        ].join("\n"),
+    html: individualPlan
+      ? `
+      <p>Thank you for your purchase.</p>
+      <p><a href="${downloadUrl}">Download your PDF</a></p>
+      <p><a href="${successUrl}">View your access page</a></p>
+      <p>Keep this email for future access.</p>
+    `
+      : `
       <p>Thank you for your purchase.</p>
       <p><a href="${downloadUrl}">Download your PDF</a></p>
       <p><a href="${guideUrl}">Open the client guide</a></p>
