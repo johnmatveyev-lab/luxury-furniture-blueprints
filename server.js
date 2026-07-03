@@ -359,6 +359,11 @@ const INDIVIDUAL_PLAN_PRODUCTS = {
     pdfFile: "dresser-plans.pdf",
     pageUrl: "dresser-plans-thankyou.html",
   },
+  "plink_1TovyPEg9evyAoHbAKwVSXs6": {
+    name: "Fluted Walnut Dresser Mirror Plans",
+    pdfFile: "dresser-mirror-plans.pdf",
+    pageUrl: "dresser-mirror-plans-thankyou.html",
+  },
 };
 
 async function sendFulfillmentEmail(session) {
