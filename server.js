@@ -364,6 +364,11 @@ const INDIVIDUAL_PLAN_PRODUCTS = {
     pdfFile: "dresser-mirror-plans.pdf",
     pageUrl: "dresser-mirror-plans-thankyou.html",
   },
+  "plink_1Tp5GgEg9evyAoHbEFDhX5dc": {
+    name: "Fluted Walnut Armoire / Wardrobe Plans",
+    pdfFile: "armoire-plans.pdf",
+    pageUrl: "armoire-plans-thankyou.html",
+  },
 };
 
 async function sendFulfillmentEmail(session) {
